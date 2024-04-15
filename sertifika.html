@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikalarım | Eslem Nur YILDIZ</title>
+
+    <link href="./style.css" rel="stylesheet"></a>
+    <link href="./nav_detail.css" rel="stylesheet"></a>
+
+</head>
+<body>
+
+    <nav class="app_header">
+
+        <a class="app_logo" href="/">
+            <img src="./assets/images/Eslem Nur.png" 
+            height="70"
+            alt="Eslem logo">
+        </a>
+        
+        <ul class="app_links">
+            <li id="cv">CV</li>
+            <li id="hakkimda" class="active">HAKKIMDA</li>
+            <li id="sertifika">SERTİFİKALAR</li>
+            <li id="iletisim">İLETİŞİM</li>
+        </ul>
+    
+        </nav>
+
+        <h1 class="baslik">Sertifikalarım</h1>
+
+    <div class="sertifika">
+
+        <div class="java-sertifika">
+            <img src="./assets/sertificates/java.jpg" alt="java sertifika">
+            <h1>Java Sertifika</h1>
+        </div>
+
+        <div class="İngilizce-sertifika">
+            <img src="./assets/sertificates/A2_Seviye_İngilizce_Sertifika_page-0001.jpg" alt="İngilizce sertifika">
+            <h1>İngilizce Sertifika</h1>
+        </div>
+        
+        <div class="Canva-sertifika">
+            <img src="./assets/sertificates/canva.jpg" alt="Canva sertifika">
+            <h1>Canva Sertifika</h1>
+        </div>
+        
+        <div class="Etsy-sertifika">
+            <img src="./assets/sertificates/etsy.jpg" alt="Etsy sertifika">
+            <h1>Etsy Sertifika</h1>
+        </div>
+
+    </div>
+    
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var menuItems = document.querySelectorAll(".app_links li");
+        
+            menuItems.forEach(function(item) {
+                item.addEventListener("mouseover", function() {
+                    menuItems.forEach(function(item) {
+                        item.classList.remove("active");
+                    });
+        
+                    this.classList.add("active");
+                });
+            });
+        });
+        
+        function openCVPage() {
+            var element = document.getElementById("cv");
+            if (element) {
+              element.addEventListener("click", function() {
+                window.location.href = "cv.html";
+              });
+            }
+            
+          }
+          openCVPage();
+        
+          function openIletisimPage() {
+            var element = document.getElementById("iletisim");
+            if (element) {
+              element.addEventListener("click", function() {
+                window.location.href = "iletisim.html";
+              });
+            }
+            
+          }
+          openIletisimPage();
+        
+          function openHakkimdaPage() {
+            var element = document.getElementById("hakkimda");
+            if (element) {
+              element.addEventListener("click", function() {
+                window.location.href = "hakkimda.html";
+              });
+            }
+            
+          }
+          openHakkimdaPage();
+        
+          function openSertifikaPage() {
+            var element = document.getElementById("sertifika");
+            if (element) {
+              element.addEventListener("click", function() {
+                window.location.href = "sertifika.html";
+              });
+            }
+            
+          }
+          openSertifikaPage();
+        
+            </script>
+
+</body>
+</html>

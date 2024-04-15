@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eslem's Blog</title>
+    <link href="./style.css" rel="stylesheet"></a>
+    <link href="./post_detail.css" rel="stylesheet"></a>
+    <script src="app.js"></script>
+
+</head>
+<body>
+
+    <nav class="app_header">
+
+        <a class="app_logo" href="/">
+            <img src="./assets/images/Eslem Nur.png" 
+            height="70"
+            alt="Eslem logo">
+        </a>
+        
+        <ul class="app_links">
+            <li>CV</li>
+            <li class="active">ABOUT</li>
+            <li>CERTIFICATES</li>
+            <li>CONTACT</li>
+        </ul>
+        </nav>
+
+    <main class="post_detail_container">
+
+        <img class="detail_image" src="./assets/images/bilmok_logo.png" alt="bilmok logo image">
+        <h1>BİLMÖK Nedir?</h1>
+        <p>BİLMÖK, bilgisayar mühendisleri arasındaki etkileşimi ve 
+            iletişimi arttırarak onların mesleki ve kişisel gelişimlerine 
+            katkıda bulunmak, ülkenin bilişim alanındaki yönelimlerini 
+            belirlemek ve bu alanda gelişimine destek vermek amacıyla düzenlenen, 
+            alanında uzman birçok konuşmacı ve sektörün önde gelen firmalarının yer 
+            aldığı mesleki ve sosyal bir kongredir.</p>
+        <h2>Yürütme Kurulu Nedir?</h2>
+        <p>Kongrenin genel gidişatının karar alma mekanizmasıdır. Kongrenin ilk günü adaylar 
+            kendilerini tanıtırlar. İkincü gün sonunda ise adaylara oy kullanılır. Aralarından 
+            5 kişi yedek olmak üzere 10 kişi seçilir. İki yıl boyunca BİLMÖK'ün yürütme kurulunda
+             yer alır. Yüzyüze ve online toplantılara katılırlar. Sürekli değiştiğinden dolayı dinamik
+              bir yapıya sahiptir.</p>
+        <h3>Detaylar...</h3>
+        <p>Bu sene düzenlenen kongre de en çok oy alan aday olarak yürütme kuruluna seçildim. 
+            Benimle birlikte diğer 4 arkadaşım ile ilk toplantımızı gerçekleştirdik. Bu toplantıda
+             danışma ve denetleme kurulu ve organizasyon da yer aldı.</p>
+    </main>
+
+    <footer>
+        <img src="./assets/images/Adsız tasarım.png" alt="footer image">
+    </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var menuItems = document.querySelectorAll(".app_links li");
+    
+        menuItems.forEach(function(item) {
+            item.addEventListener("mouseover", function() {
+                // Tüm menü öğelerinden "active" sınıfını kaldır
+                menuItems.forEach(function(item) {
+                    item.classList.remove("active");
+                });
+    
+                // Üzerine gelinen öğeye "active" sınıfını ekle
+                this.classList.add("active");
+            });
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* cv */
+
+.cv{
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.indir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #89B0AE;
+    color: #FFFFFF;
+    padding: 1rem;
+    font-size: 2rem;
+    
+    
+}
+
+
+/* sertifika */
+
+.sertifika{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.sertifika div{
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.baslik{
+    display: block;
+    background-color: #89B0AE;
+    color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.sertifika h1{
+    background-color: #89B0AE;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.sertifika img{
+    margin: 0.5rem;
+    height: 320px;
+    width: 470px;
+    border: 4px solid #89B0AE;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/* hakkkımda */
+
+iframe{
+    border-radius: 20px;
+    margin: 3rem;
+}
+
+.video-baslik{
+    background-color: #89B0AE;
+    color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+p{
+    font-size: large;
+}

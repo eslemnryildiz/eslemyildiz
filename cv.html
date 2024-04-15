@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Eslem Nur YILDIZ</title>
+    <link rel="icon" href="./assets/images/laptop-solid.svg">
+
+
+    <link href="./nav_detail.css" rel="stylesheet"></a>
+    <link href="./style.css" rel="stylesheet"></a>
+
+</head>
+<body>
+
+    <nav class="app_header">
+
+        <a class="app_logo" href="/">
+            <img src="./assets/images/Eslem Nur.png" 
+            height="70"
+            alt="Eslem logo">
+        </a>
+        
+        <ul class="app_links">
+            <li id="cv">CV</li>
+            <li id="hakkimda" class="active">HAKKIMDA</li>
+            <li id="sertifika">SERTİFİKALAR</li>
+            <li id="iletisim">İLETİŞİM</li>
+        </ul>
+    
+        </nav>
+
+    <img class="cv" src="./assets/images/Eslem_Nur_YILDIZ_CV-1.png" alt="cv fotoğraf">
+    <a class="indir" href="Eslem_Nur_YILDIZ_CV.pdf" download="Eslem_Nur_YILDIZ_CV">CV indirmek için tıklayınız.</a>
+    
+    <footer>
+        <img src="./assets/images/Adsız tasarım.png" alt="footer image">
+    </footer>
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    var menuItems = document.querySelectorAll(".app_links li");
+
+    menuItems.forEach(function(item) {
+        item.addEventListener("mouseover", function() {
+            menuItems.forEach(function(item) {
+                item.classList.remove("active");
+            });
+
+            this.classList.add("active");
+        });
+    });
+});
+
+function openCVPage() {
+    var element = document.getElementById("cv");
+    if (element) {
+      element.addEventListener("click", function() {
+        window.location.href = "cv.html";
+      });
+    }
+    
+  }
+  openCVPage();
+
+  function openIletisimPage() {
+    var element = document.getElementById("iletisim");
+    if (element) {
+      element.addEventListener("click", function() {
+        window.location.href = "iletisim.html";
+      });
+    }
+    
+  }
+  openIletisimPage();
+
+  function openHakkimdaPage() {
+    var element = document.getElementById("hakkimda");
+    if (element) {
+      element.addEventListener("click", function() {
+        window.location.href = "hakkimda.html";
+      });
+    }
+    
+  }
+  openHakkimdaPage();
+
+  function openSertifikaPage() {
+    var element = document.getElementById("sertifika");
+    if (element) {
+      element.addEventListener("click", function() {
+        window.location.href = "sertifika.html";
+      });
+    }
+    
+  }
+  openSertifikaPage();
+
+    </script>
+
+</body>
+</html>

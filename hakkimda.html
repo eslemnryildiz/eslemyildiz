@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkkımda | Eslem Nur YILDIZ</title>
+    <link rel="icon" href="./assets/images/laptop-solid.svg">
+
+    <link href="./style.css" rel="stylesheet"></a>
+    <link href="./nav_detail.css" rel="stylesheet"></a>
+
+
+</head>
+<body>
+
+    <nav class="app_header">
+
+        <a class="app_logo" href="/">
+            <img src="./assets/images/Eslem Nur.png"
+            height="70"
+            alt="Eslem logo">
+        </a>
+        
+        <ul class="app_links">
+            <li id="cv">CV</li>
+            <li id="hakkimda" class="active">HAKKIMDA</li>
+            <li id="sertifika">SERTİFİKALAR</li>
+            <li id="iletisim">İLETİŞİM</li>
+        </ul>
+    
+        </nav>
+
+        <h1 class="video-baslik">İlk Youtube Videom</h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UNa9M-LZi78" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+        <p>Merhaba! Ben Eslem Nur YILDIZ, bu blogun yazarıyım. Afyon Kocatepe Üniversitesi Bilgisayar mühendisliği ikinci
+             sınıf öğrencisi olarak, teknolojiye olan tutkum ve merakım beni buraya yönlendirdi.
+              Küçük yaşlardan itibaren bilgisayarlar ve teknolojiye meraklıydım ve zamanla bu ilgi bir tutkuya dönüştü.</p><br>
+
+        <p>Şu anda öğrenci olmamın yanı sıra, bir yazılım geliştirici olarak da adımı atmaya çalışıyorum. 
+                Hem teorik bilgi hem de pratik deneyim kazanmak için elimden gelenin en iyisini yapıyorum. 
+                Kodlamayı öğrenirken yaşadığım deneyimleri, sorunları çözme süreçlerimi ve teknolojiyle olan
+                 etkileşimlerimi bu platformda sizinle paylaşmayı heyecanla bekliyorum.</p><br>
+
+        <p>Bu blog, bilgisayar bilimi, yazılım geliştirme, yapay zeka ve diğer teknoloji odaklı konuları 
+            ele alacak. Ayrıca, kendi kişisel deneyimlerimden örnekler vererek, genç mühendislerin ve teknoloji 
+            meraklılarının benimle birlikte büyümelerine katkı sağlamayı amaçlıyorum.</p><br>
+
+        <p>Sormak istediğiniz bir şey varsa veya konu hakkında bir öneriniz, geri bildiriminiz varsa lütfen 
+            çekinmeden iletişime geçin. Sizlerle etkileşimde olmak ve bilgi paylaşımında bulunmak benim için
+             büyük bir mutluluk olacak!</p><br>
+
+        <p>Teşekkürler ve bloguma hoş geldiniz!</p>
+
+    
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function() {
+                var menuItems = document.querySelectorAll(".app_links li");
+            
+                menuItems.forEach(function(item) {
+                    item.addEventListener("mouseover", function() {
+                        menuItems.forEach(function(item) {
+                            item.classList.remove("active");
+                        });
+            
+                        this.classList.add("active");
+                    });
+                });
+            });
+            
+            function openCVPage() {
+                var element = document.getElementById("cv");
+                if (element) {
+                  element.addEventListener("click", function() {
+                    window.location.href = "cv.html";
+                  });
+                }
+                
+              }
+              openCVPage();
+            
+              function openIletisimPage() {
+                var element = document.getElementById("iletisim");
+                if (element) {
+                  element.addEventListener("click", function() {
+                    window.location.href = "iletisim.html";
+                  });
+                }
+                
+              }
+              openIletisimPage();
+            
+              function openHakkimdaPage() {
+                var element = document.getElementById("hakkimda");
+                if (element) {
+                  element.addEventListener("click", function() {
+                    window.location.href = "hakkimda.html";
+                  });
+                }
+                
+              }
+              openHakkimdaPage();
+            
+              function openSertifikaPage() {
+                var element = document.getElementById("sertifika");
+                if (element) {
+                  element.addEventListener("click", function() {
+                    window.location.href = "sertifika.html";
+                  });
+                }
+                
+              }
+              openSertifikaPage();
+            
+                </script>
+
+</body>
+</html>
